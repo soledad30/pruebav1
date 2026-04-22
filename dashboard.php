@@ -1,0 +1,1 @@
+<?php\nsession_start();\nif (!isset($_SESSION['loggedin'])) {\n    header('Location: login.php');\n    exit;\n}\n?>\n<!DOCTYPE html>\n<html>\n<head><title>Dashboard</title></head>\n<body>\n    <h2>Bienvenido al Dashboard!</h2>\n    <a href='logout.php'>Cerrar Sesión</a>\n</body>\n</html>

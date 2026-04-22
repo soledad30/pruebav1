@@ -1,1 +1,1 @@
-V2KJLK LKJK
+<?php\n// V2.PHP - Index principal con login redirect\nsession_start();\nif (isset($_SESSION['loggedin'])) {\n    header('Location: dashboard.php');\n    exit;\n} else {\n    header('Location: login.php');\n    exit;\n}\n?>
