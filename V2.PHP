@@ -1,1 +1,1 @@
-<?php\n// V2.PHP - Versión 2 del script principal\n// Actualizado por BLACKBOXAI\necho \"Hola desde pruebav1 V2!\";\n?>
+<?php\n// V2.PHP - Index principal con login redirect\nsession_start();\nif (isset($_SESSION['loggedin'])) {\n    header('Location: dashboard.php');\n    exit;\n} else {\n    header('Location: login.php');\n    exit;\n}\n?>
