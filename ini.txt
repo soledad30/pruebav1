@@ -1,1 +1,1 @@
-desde  aqui
+[config]\n; Archivo de configuración inicial\ndb_host = localhost\ndb_name = pruebav1
